@@ -1,37 +1,94 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>Activity 1: Basic HTML Bio</title>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <h1>Ana Cifuentes</h1>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#">Lattitude</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <img src = "https://media-exp1.licdn.com/dms/image/C4E03AQFulj_FNFIfrA/profile-displayphoto-shrink_200_200/0?e=1594857600&v=beta&t=cPvUrPLirSNkEJBPpRQK-3SCBIsaF3kCRsSz1Hvd9hk" atl = "Ana Cifuentes", height = "200" width = "200">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+      </ul>
+      <ul class="navbar-nav navbar-right">
+      <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Plots
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="file:///C:/Users/Anita/OneDrive/Documentos/GitHub/Homework/11-WebDesign-Challenge/max_temp.html" target="_blank">Max Temperture</a>
+        <a class="dropdown-item" href="file:///C:/Users/Anita/OneDrive/Documentos/GitHub/Homework/11-WebDesign-Challenge/humidity.html" target="_blank">Humidity</a>
+        <a class="dropdown-item" href="file:///C:/Users/Anita/OneDrive/Documentos/GitHub/Homework/11-WebDesign-Challenge/cloudiness.html" target="_blank">Cloudiness</a>
+        <a class="dropdown-item" href="file:///C:/Users/Anita/OneDrive/Documentos/GitHub/Homework/11-WebDesign-Challenge/wind_speed.html" target="_blank">Wind Speed</a>
+      </div>
+      </li>
+      <a class="nav-link" href="file:///C:/Users/Anita/OneDrive/Documentos/GitHub/Homework/11-WebDesign-Challenge/comparison.html" target="_blank tabindex="-1">Comparition</a>
+      <a class="nav-link" href="file:///C:/Users/Anita/OneDrive/Documentos/GitHub/Homework/11-WebDesign-Challenge/Data.html" target="_blank tabindex="-1">Data</a>
+      </ul>
+      
+    </div>
+  </nav>
 
-  <p>Hello this is Ana. </p>
-  <br>
-  <p>This is the second sentence.</p>
 
-    <ul>
-        <li><b>Twitter:</b></li>
-        <li><b>Instagram:</b></li>
-        <li><b>Linkedin:</b></li>
-    </ul>
-  
 
-  <table border = 1>
-      <tr>
-        <th>Books</th>
-        <th>movies</th>
-        <th>hobbies</th>
-      </tr>
-  </table>
-  
+  <div class="row">
+    <div class="col-sm-12 col-md-7">
+      <div class="box1">
+      <h1 class="display1">Summary: Latitude vs. X</h1>
+      <hr>
+      <p><img width="200" height="150" src="Resources/assets/images/Fig1.png" alt="Fig1" class="left"> The purpose of this project was to analyze how weather changes as you get closer to the equator. 
+        To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
+      </p>
+      <p> After assembling the dataset, we used Matplotlib to plot various aspects of weather vs. latitude. Factors we looked
+        at included: temperture, cloudiness, wind speed, and humidity. This site provides the source data and visuaizations created
+        as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.
+      </p>
+      </div>
+    </div>
+      
+    <div class="col-md-3">
+      <div class="box2">
+      <!-- display images source link: https://www.quora.com/How-we-place-two-images-side-by-side-in-html -->
+      <h2 class="display1" style="font-size:30px">Visualizations</h2>
+      <hr>
+        
+      <div style="display:flex">
+        <div class="rowval">
+        <div style="flex:1;padding-right:5px;">
+             <a href="file:///C:/Users/Anita/OneDrive/Documentos/GitHub/Homework/11-WebDesign-Challenge/max_temp.html" target="_blank"><img src="Resources/assets/images/Fig1.png" style="width:100%"></a>
+        </div>
+        <div style="flex:1;padding-left:5px;">
+          <a href="file:///C:/Users/Anita/OneDrive/Documentos/GitHub/Homework/11-WebDesign-Challenge/cloudiness.html" target="_blank"><img src="Resources/assets/images/Fig3.png" style="width:100%"></a>
+        </div>
+        </div>
+        <div class="rowval">
+        <div style="flex:1;padding-right:5px;">
+          <a href="file:///C:/Users/Anita/OneDrive/Documentos/GitHub/Homework/11-WebDesign-Challenge/humidity.html" target="_blank"><img src="Resources/assets/images/Fig2.png" style="width:100%"></a>
+        </div>
+        <div style="flex:1;padding-right:5px;">
+          <a href="file:///C:/Users/Anita/OneDrive/Documentos/GitHub/Homework/11-WebDesign-Challenge/wind_speed.html" target="_blank"><img src="Resources/assets/images/Fig4.png" style="width:100%"></a>
+        </div>
+        </div>
+      </div>
 
-  <a href="https://cifuentes01.github.io/my_project_1/">My first project link</a>
-  
+
+      </div>
+    </div>
+  </div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
